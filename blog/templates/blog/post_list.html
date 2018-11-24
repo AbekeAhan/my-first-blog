@@ -1,0 +1,15 @@
+<html>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
+</html>
+
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_
+date')
+
+{{ post }}
+
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
